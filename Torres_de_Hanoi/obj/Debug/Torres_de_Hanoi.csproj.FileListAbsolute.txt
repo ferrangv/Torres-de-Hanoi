@@ -1,0 +1,6 @@
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe.config
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.pdb
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csprojAssemblyReference.cache
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.exe
+C:\Users\ferra\Source\Repos\ferrangv\Torres-de-Hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.pdb
