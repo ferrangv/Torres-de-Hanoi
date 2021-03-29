@@ -9,6 +9,7 @@ namespace Torres_de_Hanoi
     class Hanoi
     {
         int m = 0;
+        int direccion = 0;
 
      
         public void mover_disco(Pila a, Pila b)
@@ -16,11 +17,13 @@ namespace Torres_de_Hanoi
             if ((a.Top > b.Top || a.Top == 0) && b.Top != 0)
             {
                 a.push(b.pop());
+                direccion = 1;
                 m++;
             }
             else if ((b.Top > a.Top || b.Top == 0) && a.Top != 0)
             {
                 b.push(a.pop());
+                direccion = 2;
                 m++;
             }
         }
@@ -32,9 +35,33 @@ namespace Torres_de_Hanoi
                 while(fin.Size < n)
                 {
                     mover_disco(ini, fin);
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de inicio a fin");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de fin a inicio");
+                    }
                     if (fin.Size == n) return m;
                     mover_disco(ini, aux);
-                    mover_disco(aux, fin); 
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de inicio a aux");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de aux a inicio");
+                    }
+                    mover_disco(aux, fin);
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de aux a fin");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de fin a aux");
+                    }
                     if (fin.Size == n) return m;
 
                 }
@@ -44,9 +71,33 @@ namespace Torres_de_Hanoi
                 while (fin.Size < n)
                 {
                     mover_disco(ini, aux);
-                    mover_disco(ini, fin); 
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de inicio a aux");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de aux a inicio");
+                    }
+                    mover_disco(ini, fin);
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de inicio a fin");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de fin a inicio");
+                    }
                     if (fin.Size == n) return m;
-                    mover_disco(aux, fin); 
+                    mover_disco(aux, fin);
+                    if (direccion == 2)
+                    {
+                        Console.WriteLine("Moviendo de aux a fin");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Moviendo de fin a aux");
+                    }
                     if (fin.Size == n) return m;
 
                 }
@@ -68,7 +119,7 @@ namespace Torres_de_Hanoi
                 recursivo(n - 1, aux, fin, ini);
             }
 
-            return m; 
+            return m;
         }
     }
 }

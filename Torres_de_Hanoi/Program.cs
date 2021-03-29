@@ -38,6 +38,15 @@ namespace Torres_de_Hanoi
                 key = Console.ReadLine();
             }
 
+            while(Int32.Parse(key) < 0)
+            {
+                Console.WriteLine("No puedes jugar con discos negativos");
+                Console.WriteLine("");
+                Console.WriteLine("Introduce un número valido...");
+                key = Console.ReadLine();
+
+            }
+
             if(key != "0")
             {
                 Console.WriteLine("");
